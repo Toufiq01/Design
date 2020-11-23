@@ -5,7 +5,7 @@ class ParkingSystem {
     }
     
     public boolean addCar(int carType) {
-        return count[carType-1]-- > 0;
+        return count[carType-1]-- > 0; //it's just a condition only return true and false
     }
 }
 // Runtime: 6 ms, faster than 99.71% of Java online submissions for Design Parking System.
