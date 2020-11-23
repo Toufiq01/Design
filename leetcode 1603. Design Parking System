@@ -1,0 +1,12 @@
+class ParkingSystem {
+    int[] count;
+    public ParkingSystem(int big, int medium, int small) {
+        count = new int[]{big, medium, small};
+    }
+    
+    public boolean addCar(int carType) {
+        return count[carType-1]-- > 0;
+    }
+}
+// Runtime: 6 ms, faster than 99.71% of Java online submissions for Design Parking System.
+// Memory Usage: 39.6 MB, less than 64.03% of Java online submissions for Design Parking System.
